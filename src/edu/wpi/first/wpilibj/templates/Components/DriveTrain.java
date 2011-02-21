@@ -23,8 +23,9 @@ public class DriveTrain
     final int MECANUM = 0;
     final int TANK = 1;
     final int ARCADE = 2;
+    
     /**
-     *
+     * 4 Wheel Drive
      * @param frontLeftMotor
      * @param frontRightMotor
      * @param rearLeftMotor
@@ -39,7 +40,7 @@ public class DriveTrain
     }
 
     /**
-     *
+     * 2 Wheel Drive
      * @param leftMotor
      * @param rightMotor
      */
@@ -52,7 +53,7 @@ public class DriveTrain
     }
 
     /**
-     *
+     * 4 Wheel Drive w/ 4 Encoders
      * @param frontLeftMotor
      * @param frontRightMotor
      * @param rearLeftMotor
@@ -76,7 +77,7 @@ public class DriveTrain
     }
 
     /**
-     *
+     * 4 Wheel Drive with 2 Encoders
      * @param frontLeftMotor
      * @param frontRightMotor
      * @param rearLeftMotor
@@ -98,7 +99,7 @@ public class DriveTrain
     }
 
     /**
-     *
+     * 2 Wheel Drive w/ 2 Encoders
      * @param leftMotor
      * @param rightMotor
      * @param leftEncoder

@@ -105,6 +105,6 @@ public class Teleoperated extends ICPProtocol{
     }
 
     public void setArm(){
-        arm.setStick(con2.rStick);
+        arm.update();
     }
 }

@@ -82,8 +82,7 @@ public class MainRobot extends IterativeRobot
         forkLift = new ForkLift();
 
         // Arm
-        arm = new Arm(7);
-        arm.setStick(con2.rStick);
+        arm = new Arm(7, con2.rStick);
 
         dashboard = new SimpleDashboard();
         gyro = new Gyro(1);

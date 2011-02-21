@@ -12,13 +12,15 @@ import edu.wpi.first.wpilibj.Jaguar;
 public class Arm
 {
     Jaguar motor;
-    public Arm(int channel)
+    XboxGamepad.Stick controller;
+
+    public Arm(int channel, XboxGamepad.Stick stick)
     {
         motor = new Jaguar(channel);
+        controller = stick;
     }
 
-    public void setStick(XboxGamepad.Stick st)
-    {
-        motor.set(st.getStickY()/4);
+    public void update(){
+        motor.set(controller.getStickY()/4);
     }
 }
